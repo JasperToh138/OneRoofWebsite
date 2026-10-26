@@ -5,6 +5,7 @@ import { FloatingWhatsapp } from "@/components/FloatingWhatsapp";
 import { Navbar } from "@/components/Navbar";
 import { ScrollEffects } from "@/components/ScrollEffects";
 import { serviceAreas, site } from "@/data/site";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -60,6 +61,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         <Footer />
         <FloatingWhatsapp />
+        <SpeedInsights />
       </body>
     </html>
   );
